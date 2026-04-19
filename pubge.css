@@ -13,7 +13,7 @@
     left: 0;
     top: 0;
     z-index: 100;
-
+    font-size: 18px;
 }
 
 
@@ -48,9 +48,14 @@ h2 {
 }
 h1 {
     color: white;
+
 }
 h3 {
     color: gold;
+}
+
+.cc{
+    font-size: 35px;
 }
 
 .pag {
@@ -109,7 +114,6 @@ h3 {
     padding-top: 90px;
     display: flex;
     gap: 20px;
-    padding-right: 20px;
      display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
     
@@ -169,4 +173,14 @@ footer {
 .bog {
     color: blue;
     text-decoration:underline;
+}
+
+.bvb {
+    color: darkred;
+    transition: all 0.4s ease-in-out;
+}
+
+.bvb:hover {
+text-shadow: 2px 0 5px red;
+transform: scale(1.05);
 }
