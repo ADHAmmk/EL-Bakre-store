@@ -8,25 +8,29 @@
 <link rel="stylesheet" href="pubge.css">
 </head>
 <body>
- <header>
-        <nav class="navbar">
-            
-            <h2>PUBGE UC</h2>
-            <img style="width: 35px; padding-left: 650px;"  src="download (1).png" alt="">
+<header>
+    <nav class="navbar">
         
-            </div>
+        <div class="logo">
+            <h2>PUBGE UC</h2>
+            <!-- <img src="download (1).png" alt="" style="width: 35px; padding-left: 650px;"> -->
+        </div>
 
-            <ul id="nav">
-              <li><a class="bvb" href="rer.html" target="_blank">خانة العروض</a></li>
-                <li><a class="bog" href="https://www.facebook.com/mhmd.albkry.861146?locale=ar_AR" target="_blank">رابط Facebook</a></li>
-                <li><a href="#UC">UC</a></li>
-                <li><a href="#r">الصفحه الرئيسيه</a></li>
-                <li><a href="#footer">تواصل معنا</a></li>
-                
-            </ul>
+        <!-- زرار الموبايل -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
 
-        </nav>
-    </header>
+        <ul id="nav">
+            <li><a href="rer.html" target="_blank">خانة العروض</a></li>
+            <li><a href="https://www.facebook.com/mhmd.albkry.861146?locale=ar_AR" target="_blank">Facebook</a></li>
+            <li><a href="#UC">UC</a></li>
+            <li><a href="#r">الصفحه الرئيسيه</a></li>
+            <li><a href="#footer">تواصل معنا</a></li>
+        </ul>
+
+    </nav>
+</header>
    <br>
    <br>
    
@@ -176,6 +180,13 @@ function sendWhatsApp6() {
   let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   
   window.open(url, "_blank");
+}
+
+let menu = document.getElementById("menu-toggle");
+let nav = document.getElementById("nav");
+
+menu.onclick = function() {
+    nav.classList.toggle("active");
 }
 </script>
 </body>
