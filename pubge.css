@@ -208,5 +208,6 @@ transform: scale(1.05);
 
     #nav li {
   margin-bottom: 15px;
+  padding-left: 30px;
     }
 }
