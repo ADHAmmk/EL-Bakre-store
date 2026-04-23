@@ -205,5 +205,8 @@ transform: scale(1.05);
     #nav.active {
         display: flex;
     }
-}
 
+    #nav li {
+  margin-bottom: 15px;
+    }
+}
