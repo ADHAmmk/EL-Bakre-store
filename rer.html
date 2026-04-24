@@ -8,27 +8,31 @@
 <link rel="stylesheet" href="pubge.css">
 </head>
 <body style="background: #1a1a1a;">
- <header>
-        <nav class="navbar">
-            
-            <h2>PUBGE UC</h2>
-            <img style="width: 35px; padding-left: 870px;"  src="download (1).png" alt="">
+    <nav class="navbar">
         
-            </div>
+        <div class="logo">
+            <h2>PUBGE UC</h2>
+            <!-- <img src="download (1).png" alt="" style="width: 35px; padding-left: 650px;"> -->
+        </div>
 
-            <ul id="nav">
-           
-                <li><a href="index.html">الرجوع لصفحه الرئيسيه</a></li>
-                <li><a href="#footer">تواصل معنا</a></li>
-                
-            </ul>
+        <!-- زرار الموبايل -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
 
-        </nav>
-    </header>
+        <ul id="nav">
+         
+            <li><a href="index.html">الرجوع لصفحه الرئسيه <i
+                                    class="fa-solid fa-angle-left"></i></a></li>
+            <li><a href="#footer">تواصل معنا</a></li>
+        </ul>
+
+    </nav>
+</header>
 <br>
 <br>
 
-<section  class="pag" id="r">
+<section  class="pag" >
     <div class="tofas">
 <h1 class="cc">عروض البكري store</h1>
 <h1 class="cc">عروض يوميه متفوتش العرض</h1>
@@ -51,7 +55,7 @@
 
   <p>للتواصل مع الدعم الفني او الاستفسار معنا عن المواقه </p></p> يرجى التواصل عبر الواتساب </p>
 
-  <p>تواصل معني علي هذا الرقم: <a href=""onclick="sendWhatsApp6()">201013984024+</a></p> 
+  <p>تواصل معني علي هذا الرقم: <a style="text-decoration: underline; color: blue;" href=""onclick="sendWhatsApp6()">201013984024+</a></p> 
 </div>
       
  
@@ -68,6 +72,14 @@ function sendWhatsApp6() {
   let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   
   window.open(url, "_blank");
+}
+
+
+let menu = document.getElementById("menu-toggle");
+let nav = document.getElementById("nav");
+
+menu.onclick = function() {
+    nav.classList.toggle("active");
 }
 </script>
 </body>

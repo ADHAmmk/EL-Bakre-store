@@ -135,7 +135,7 @@ h3 {
 .kk {
     height: 25px;
     width: 80px;
-    font-size: 12px;
+    font-size: 10px;
     background: linear-gradient(to left, gold, rgb(27, 27, 27));
 border: 1px solid black;
 transition: all  0.4s ease-in-out ;
@@ -184,7 +184,12 @@ text-shadow: 2px 0 5px red;
 transform: scale(1.05);
 }
 
-
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
 /* 📱 موبايل */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -210,4 +215,8 @@ transform: scale(1.05);
   margin-bottom: 15px;
   padding-left: 75px;
     }
+
+
 }
+
+
